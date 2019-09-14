@@ -24,7 +24,7 @@ const server = http.createServer((req, res) => {
     // 这里返回的永远都是字符串的格式，json格式的字符串
     res.end(JSON.stringify(resData));
   }
-   //   POST形式的返回接口
+   //   POST形式的返回接口,使用postmand可以测试这个接口
   if (method === "POST") {
     let postData = "";
     req.on("data", chunk => {
